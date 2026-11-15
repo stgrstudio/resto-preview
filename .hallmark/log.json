@@ -1,0 +1,28 @@
+[
+ {
+  "shape": "one evening, sunset to last plates",
+  "theme": "custom",
+  "axes": "dark/roman-serif/chromatic-brass",
+  "hero": "Poster",
+  "nav": "edge-aligned over photo",
+  "footer": "colophon block",
+  "imagery": "photographs, AI-generated 4",
+  "photos": [],
+  "entry": "index.html",
+  "sections": [
+   "hero",
+   "booking times",
+   "room band",
+   "menu switcher",
+   "statement + grill photo",
+   "evening schedule",
+   "find us",
+   "footer"
+  ],
+  "signature": "live Seminyak sunset time that sets the first seating",
+  "waived": [],
+  "prompt": "Fictional Bali restaurant in Seminyak, cozy but elegant",
+  "date": "2026-11-15",
+  "mode": "build"
+ }
+]

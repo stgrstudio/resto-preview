@@ -1,0 +1,4 @@
+.hallmark/gen/
+.hallmark/preflight.json
+Thumbs.db
+.DS_Store
