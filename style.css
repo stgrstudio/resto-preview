@@ -26,6 +26,10 @@ h2 { font-size: var(--text-section); line-height: 1.05; max-width: 22ch; }
 h3 { font-size: var(--text-title); line-height: 1.15; }
 .lead { font-size: var(--text-lead); line-height: 1.5; color: var(--color-ink-2); max-width: 44ch; }
 .wordmark { font-family: var(--font-outlier); font-size: var(--text-xl); color: var(--color-ink); text-decoration: none; white-space: nowrap; }
+/* the house's own wordmark (img/rumah-bara-logo.svg, inlined): drawn in currentColor so it takes each light's ink,
+   sized off the wordmark's font-size so the nav and the footer keep the line the set name had */
+.wordmark { display: inline-flex; align-items: center; line-height: 0; }
+.wordmark__svg { display: block; height: 1.15em; width: auto; }
 .frame { border-radius: var(--radius-card); overflow: hidden; }
 
 /* Glass panes */
@@ -251,4 +255,11 @@ html:not(.js) .plate > img:first-child { opacity: 1; }
 @media (prefers-reduced-motion: reduce) {
   body, .hero__photo > img, .book__bg > img, .plate > img, .stage > img, .night time, .dishes li, .dishes h3, .btn, .link-cta, .link-quiet, .seg label, .tabs button, .stepper__btn, .nav__links a, .dock, .concept__seg button { transition: none; }
   .gate { display: none; }
+}
+
+/* ---------- Phone tidy: the menu's three tabs fit the screen; the address placeholder stays one chip ---------- */
+@media (max-width: 40rem) {
+  .tabs { align-self: stretch; }
+  .tabs button { flex: 1 1 auto; padding: 0 var(--space-sm); font-size: var(--text-sm); }
+  .fill { white-space: nowrap; }
 }
